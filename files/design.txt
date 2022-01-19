@@ -1,0 +1,6 @@
+Title: Stock Web Scraper
+Description: An app that takes a list of stock tickers, and scrapes the web to gather the current price of each stock, and displays the price.
+Objects: Stock:
+	    ticker
+            get()
+	   display
