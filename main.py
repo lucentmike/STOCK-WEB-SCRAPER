@@ -26,11 +26,12 @@ class Stock:
         name = (name_result["temp"])
         change = (change_result["temp"])
 
-        print(f"{name}({self.ticker.upper()}), Current Price: {price} Change: {change}")
+        print(f"Scraping Data For: {name}")
+        print(f"{name}({self.ticker.upper()}), Current Price: {price} Change: {change}\n")
 
 
 if __name__ == "__main__":
-    tickers = ["aapl" , "msft", "dis", "csco", "nvda", "tsla", "orcl", "hp", "jnj", "sofi", "bac", "nkla", "ms", "usb", "pg", "qs", "ag"]
+    tickers = ["aapl" , "msft", "dis", "csco", "nvda", "tsla", "orcl", "hp", "jnj", "sofi", "bac", "nkla", "ms", "usb", "pg", "qs",]
 
     for tick in tickers:
         tick = Stock(tick)
